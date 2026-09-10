@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>侗族语言应用 | 项目展示</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;500;600;700;900&family=Noto+Sans+SC:wght@300;400;500;600;700&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --color-text: #2c2c2c;
+      --color-bg: #faf9f6;
+      --color-accent: #8b6f47;
+      --font-serif: 'Noto Serif SC', 'Crimson Text', serif;
+      --font-sans: 'Noto Sans SC', sans-serif;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: var(--font-sans);
+      background-color: var(--color-bg);
+      color: var(--color-text);
+      line-height: 1.8;
+    }
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1.5rem 2rem;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+    .navbar h1 {
+      font-family: var(--font-serif);
+      font-size: 1.5rem;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+    }
+    .navbar nav a {
+      margin-left: 2rem;
+      text-decoration: none;
+      color: var(--color-text);
+      font-size: 0.95rem;
+    }
+    .navbar nav a:hover { color: var(--color-accent); }
+    .hero {
+      text-align: center;
+      padding: 5rem 2rem 4rem;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    .hero h2 {
+      font-family: var(--font-serif);
+      font-size: 3rem;
+      font-weight: 900;
+      line-height: 1.3;
+      letter-spacing: 0.03em;
+      margin-bottom: 1.5rem;
+    }
+    .hero p { font-size: 1.15rem; color: #666; max-width: 600px; margin: 0 auto; }
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1.5rem;
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 2rem;
+    }
+    .card {
+      background: #fff;
+      border-radius: 12px;
+      padding: 2rem 1.5rem;
+      box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+    .card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    }
+    .card h3 {
+      font-family: var(--font-serif);
+      font-size: 1.3rem;
+      font-weight: 700;
+      margin-bottom: 0.75rem;
+    }
+    .card p { font-size: 0.95rem; color: #555; }
+    footer {
+      text-align: center;
+      padding: 3rem 2rem;
+      font-size: 0.9rem;
+      color: #999;
+    }
+    footer a { color: var(--color-accent); text-decoration: none; }
+    @media (max-width: 600px) {
+      .navbar { flex-direction: column; gap: 0.8rem; padding: 1rem; }
+      .navbar nav a { margin: 0 1rem; }
+      .hero h2 { font-size: 2rem; }
+      .hero { padding: 3rem 1.5rem 2rem; }
+    }
+  </style>
+</head>
+<body>
+  <header class="navbar">
+    <h1>侗族语言应用</h1>
+    <nav>
+      <a href=" ">首页</a >
+      <a href="#features">功能</a >
+      <a href="#">关于</a >
+    </nav>
+  </header>
+  <section class="hero">
+    <h2>让语言被看见</h2>
+    <p>一个关于侗族语言记录、学习与传承的开源项目</p >
+  </section>
+  <section class="features" id="features">
+    <div class="card">
+      <h3>语言记录</h3>
+      <p>收集侗语词汇、发音和例句，建立数字化语料库。</p >
+    </div>
+    <div class="card">
+      <h3>在线学习</h3>
+      <p>提供基础的侗语学习模块，帮助更多人了解这门语言。</p >
+    </div>
+    <div class="card">
+      <h3>开源协作</h3>
+      <p>所有代码和资料开放，欢迎开发者与语言爱好者一起参与。</p >
+    </div>
+  </section>
+  <footer>
+    <p>© 2026 侗族语言应用 · <a href="https://github.com/myword-cloud/learn-2026">GitHub</a ></p >
+  </footer>
+</body>
+</html>
